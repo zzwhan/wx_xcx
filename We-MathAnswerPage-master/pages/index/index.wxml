@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="begininfo">
+  <view>欢迎使用小学五年级数学测试</view>
+  <button bindtap='beginAnswer'> 开始测试 </button>
+</view>

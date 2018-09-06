@@ -1,0 +1,18 @@
+<!--pages/result/result.wxml-->
+<view>
+    <view>
+      <view><text>恭喜您答题结束</text></view>
+  </view>
+
+  <view class='result'>
+    <view><text>本次测试总共十道题</text></view>
+    <view><text>答对{{mytrue}}道题</text></view>
+    <view><text>答错{{wrong}}道题</text></view>
+    <view><text>正确率为{{accuracy}}%</text></view>
+  </view>
+  
+  <view class='mybutton'>
+     <button bindtap='wrongAnswer' class='blbutton'>查看错题</button>
+     <button bindtap='reset' class='brbutton'>返回首页</button>
+  </view>
+</view>

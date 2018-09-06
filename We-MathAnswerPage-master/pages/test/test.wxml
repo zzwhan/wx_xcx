@@ -1,0 +1,39 @@
+<!--pages/test/test.wxml-->
+
+<view class="page" hover='true' hover-stay-time="20000">
+  <view class='page__hd'>
+    <view class="page__title">{{index+1}}、{{questionDetail}}
+      <image wx:if="{{questionImage!=''}}" src="{{questionImage}}" class='myimage' mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+
+      <view wx:if="{{optionnumber == '3'}}">
+          <view class="weui-cell " hover-class="weui-cell_active" bindtap='select' data-value="{{options[answerArrays1[index]]}}" data-option="{{index}}" wx:for="{{answerArrays1}}" wx:key="index">
+        <icon type="{{icon[index]}}" size="23"></icon>
+        <view>{{myoption[index]}}、{{options[answerArrays1[index]]}}</view>
+        </view>
+      </view>
+
+      <view wx:elif="{{optionnumber == '4'}}">
+          <view class="weui-cell " hover-class="weui-cell_active" bindtap='select' data-value="{{options[answerArrays2[index]]}}" data-option="{{index}}" wx:for="{{answerArrays2}}" wx:key="index">
+          
+        <icon type="{{icon[index]}}" size="23"></icon>
+        <view>{{myoption[index]}}、{{options[answerArrays2[index]]}}</view>
+        </view>
+      </view>
+
+      <view wx:else>
+          <view class="weui-cell " hover-class="weui-cell_active" bindtap='select' data-value="{{options[answerArrays3[index]]}}" data-option="{{index}}" wx:for="{{answerArrays3}}" wx:key="index">
+      
+        <icon type="{{icon[index]}}" size="23"></icon>
+        <view>{{myoption[index]}}、{{options[answerArrays3[index]]}}</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+/* pages/result/result.wxss */
+page{
+  background-color: #99ffcc;
+}
+.result{
+  margin: 50px auto;
+  text-align: center;
+}
+
+.mybutton {
+  width: 200px;
+  height: 30px;
+  margin: 150px auto;
+}
+button{
+  float: left; 
+}

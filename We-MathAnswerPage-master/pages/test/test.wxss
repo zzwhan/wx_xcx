@@ -1,0 +1,11 @@
+/* pages/test/test.wxss */
+page{
+  background-color: #99ffcc;
+}
+
+.myimage{
+  width: 650rpx;
+  height: 250rpx;
+ 
+}
+

@@ -1,0 +1,24 @@
+page{
+  background-color: #99ffcc;
+}
+.myimage{
+  width: 650rpx;
+  height: 250rpx;
+ 
+}
+.page_ft{
+  margin:20px auto;
+  text-align: center;
+}
+.wronganswer{
+  color: red;
+}
+.trueanswer{
+  color: green;
+}
+.mybutton {
+  width: 100px;
+  height: 30px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
